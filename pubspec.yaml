@@ -1,0 +1,84 @@
+name: cogona_net
+description: Cogona Net - Professional MikroTik Voucher Management System
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  # تم التحديث ليتوافق مع Flutter 3.19 وتجنب خطأ الـ SDK في GitHub Actions
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Design
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  shimmer: ^3.0.0
+  animate_do: ^3.1.2
+  flutter_animate: ^4.3.0
+  glassmorphism: ^3.0.0
+  
+  
+  # State Management
+  provider: ^6.1.1
+  flutter_bloc: ^8.1.3
+  
+  # Database & Storage
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  shared_preferences: ^2.2.2
+  
+  # Networking
+  dio: ^5.4.0
+  connectivity_plus: ^5.0.2
+  
+  # MikroTik API (RouterOS Client)
+  router_os_client: ^2.0.0
+  
+  # Authentication
+  google_sign_in: ^6.1.6
+  firebase_auth: ^4.16.0
+  firebase_core: ^2.24.2
+  
+  # PDF & Printing
+  pdf: ^3.10.4
+  printing: ^5.11.1
+  share_plus: ^7.2.1
+  
+  # Utils
+  intl: ^0.20.2
+  uuid: ^4.2.2
+  crypto: ^3.0.3
+  device_info_plus: ^9.1.1
+  package_info_plus: ^5.0.1
+  permission_handler: ^11.1.0
+  
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+# إعدادات المصادر (Assets)
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+
+# إعدادات أيقونة التطبيق
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 26
+  adaptive_icon_background: "#0A0A0F"
+  adaptive_icon_foreground: "assets/images/app_icon_foreground.png"
